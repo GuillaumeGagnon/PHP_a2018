@@ -56,7 +56,9 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 			<?php } else { ?>	
 				<li><?= $this->Html->link(__($role), ['controller' => 'Users', 'action' => 'view/'.$_SESSION['Auth']['User']['id']]) ?></li>
 				<li><?= $this->Html->link(__('Logout'), ['controller' => 'Users', 'action' => 'logout']) ?></li>
+				
 			<?php } ?>
+			<li><?= $this->Html->link(__('About'), ['controller' => 'Users', 'action' => 'about']) ?></li>
 			</ul>
         </div>
     </nav>

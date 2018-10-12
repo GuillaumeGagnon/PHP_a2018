@@ -55,7 +55,7 @@ class UsersController extends AppController
 		
 		$action = $this->request->getParam('action');
 		
-		if (in_array($action, ['add', 'login'])) {
+		if (in_array($action, ['add', 'login', 'about'])) {
 			return true;
 		} else if(in_array($action, ['delete', 'view'])){
 			if($this->request->getParam('pass.0') == $logged_user['id']){
@@ -209,5 +209,10 @@ class UsersController extends AppController
         }
 
         return $this->redirect(['action' => 'index']);
+    }
+	
+	 public function about()
+    {
+		
     }
 }

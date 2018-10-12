@@ -67,7 +67,7 @@ class AppController extends Controller
 
         // Permet à l'action "display" de notre PagesController de continuer
         // à fonctionner. Autorise également les actions "read-only".
-        $this->Auth->allow(['display'/*, 'view', 'index'*/]);
+        $this->Auth->allow(['display', 'about'/*, 'view', 'index'*/]);
 		
 		
     }
