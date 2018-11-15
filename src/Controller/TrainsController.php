@@ -3,6 +3,7 @@ namespace App\Controller;
 
 use App\Controller\AppController; 
 use Cake\Event\Event;
+use Cake\Console\ShellDispatcher;
 
 /**
  * Trains Controller
@@ -14,7 +15,11 @@ use Cake\Event\Event;
 class TrainsController extends AppController
 {
 	
-	
+	public function initialize()
+	{
+		parent::initialize();
+		$this->Auth->allow('trouverTrain', 'autocompletetrains', 'autocomplete', 'display', 'view', 'index');
+	}
 
     /**
      * Index method
@@ -148,6 +153,7 @@ class TrainsController extends AppController
 
 		$this->Auth->allow('view');
 		$this->Auth->allow('index');
+		$this->Auth->allow('trouverTrain', 'autocompletetrains', 'autocomplete');
 
 	}
 	
@@ -157,9 +163,50 @@ class TrainsController extends AppController
 		if($user['role']  === 2){
 			//debug($user);
 			return true;
-		}		
+		}
+		if(in_array($action, ['autocompletetrains', 'trouverTrain'])){
+            return true;
+        }
+		return true;
 		
 	}
+	
+	public function trouverTrain() {
+
+        if ($this->request->is('ajax')) {
+            $this->autoRender = false;
+			
+            $name = $this->request->query['term'];
+			
+            $resultats = $this->Trains->find('all', array(
+                'conditions' => array('trains.name LIKE ' => '%' . $name . '%')
+            ));
+			
+            $resultArr = array();
+			
+            foreach ($resultats as $resultat) {
+                $resultArr[] = array('label' => $resultat['name'], 'value' => $resultat['name']);
+            }
+			
+            echo json_encode($resultArr);
+        }
+    }
+	
+	public function toPDf($id)
+    {
+		$shell = new ShellDispatcher();
+		$output = $shell->run(['cake', 'toPDf', 'http://localhost/PHP/trains/view/'.$id]);
+	 
+		if (0 === $output) {
+			$this->Flash->success('Successfully printed in PDF.');
+		} else {
+			$this->Flash->error('Failed to print in PDF.');
+		}
+	 
+		return $this->redirect('/');
+    }
+	
+	
 	
 	
 	

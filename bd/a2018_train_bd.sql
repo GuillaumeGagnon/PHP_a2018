@@ -3,11 +3,10 @@
 -- https://www.phpmyadmin.net
 --
 -- Client :  localhost
--- Généré le :  Ven 12 Octobre 2018 à 02:35
+-- Généré le :  Sam 13 Octobre 2018 à 03:49
 -- Version du serveur :  5.6.37
 -- Version de PHP :  5.6.31
 
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
 
@@ -20,7 +19,22 @@ SET time_zone = "+00:00";
 -- Base de données :  `a2018_train_bd`
 --
 CREATE DATABASE IF NOT EXISTS `a2018_train_bd` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `a2018_train_bd`;
+USE a2018_train_bd;
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `i18n`
+--
+
+CREATE TABLE IF NOT EXISTS "i18n" (
+  "id" int(11) NOT NULL,
+  "locale" varchar(6) NOT NULL,
+  "model" varchar(255) NOT NULL,
+  "foreign_key" int(10) NOT NULL,
+  "field" varchar(255) NOT NULL,
+  "content" text
+);
 
 -- --------------------------------------------------------
 
@@ -28,18 +42,17 @@ USE `a2018_train_bd`;
 -- Structure de la table `passengers`
 --
 
-DROP TABLE IF EXISTS `passengers`;
-CREATE TABLE IF NOT EXISTS `passengers` (
-  `id` int(11) NOT NULL,
-  `user_id` int(11) NOT NULL,
-  `train_id` int(11) NOT NULL,
-  `name` varchar(255) NOT NULL,
-  `address` varchar(255) NOT NULL,
-  `phone` varchar(255) NOT NULL,
-  `other` varchar(255) NOT NULL,
-  `created` datetime DEFAULT NULL,
-  `modified` datetime DEFAULT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4;
+CREATE TABLE IF NOT EXISTS "passengers" (
+  "id" int(11) NOT NULL,
+  "user_id" int(11) NOT NULL,
+  "train_id" int(11) NOT NULL,
+  "name" varchar(255) NOT NULL,
+  "address" varchar(255) NOT NULL,
+  "phone" varchar(255) NOT NULL,
+  "other" varchar(255) NOT NULL,
+  "created" datetime DEFAULT NULL,
+  "modified" datetime DEFAULT NULL
+);
 
 --
 -- Contenu de la table `passengers`
@@ -57,11 +70,10 @@ INSERT INTO `passengers` (`id`, `user_id`, `train_id`, `name`, `address`, `phone
 -- Structure de la table `roles`
 --
 
-DROP TABLE IF EXISTS `roles`;
-CREATE TABLE IF NOT EXISTS `roles` (
-  `id` int(11) NOT NULL,
-  `role_name` varchar(191) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+CREATE TABLE IF NOT EXISTS "roles" (
+  "id" int(11) NOT NULL,
+  "role_name" varchar(191) NOT NULL
+);
 
 --
 -- Contenu de la table `roles`
@@ -77,14 +89,13 @@ INSERT INTO `roles` (`id`, `role_name`) VALUES
 -- Structure de la table `stations`
 --
 
-DROP TABLE IF EXISTS `stations`;
-CREATE TABLE IF NOT EXISTS `stations` (
-  `id` int(11) NOT NULL,
-  `name` varchar(191) NOT NULL,
-  `type` int(11) NOT NULL,
-  `created` datetime DEFAULT NULL,
-  `modified` datetime DEFAULT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8mb4;
+CREATE TABLE IF NOT EXISTS "stations" (
+  "id" int(11) NOT NULL,
+  "name" varchar(191) NOT NULL,
+  "type" int(11) NOT NULL,
+  "created" datetime DEFAULT NULL,
+  "modified" datetime DEFAULT NULL
+);
 
 --
 -- Contenu de la table `stations`
@@ -105,14 +116,13 @@ INSERT INTO `stations` (`id`, `name`, `type`, `created`, `modified`) VALUES
 -- Structure de la table `station_types`
 --
 
-DROP TABLE IF EXISTS `station_types`;
-CREATE TABLE IF NOT EXISTS `station_types` (
-  `id` int(11) NOT NULL,
-  `type` varchar(191) NOT NULL,
-  `description` varchar(255) NOT NULL,
-  `created` datetime DEFAULT NULL,
-  `modified` datetime DEFAULT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4;
+CREATE TABLE IF NOT EXISTS "station_types" (
+  "id" int(11) NOT NULL,
+  "type" varchar(191) NOT NULL,
+  "description" varchar(255) NOT NULL,
+  "created" datetime DEFAULT NULL,
+  "modified" datetime DEFAULT NULL
+);
 
 --
 -- Contenu de la table `station_types`
@@ -130,16 +140,15 @@ INSERT INTO `station_types` (`id`, `type`, `description`, `created`, `modified`)
 -- Structure de la table `trains`
 --
 
-DROP TABLE IF EXISTS `trains`;
-CREATE TABLE IF NOT EXISTS `trains` (
-  `id` int(11) NOT NULL,
-  `name` varchar(191) NOT NULL,
-  `origin_station` int(11) NOT NULL,
-  `final_station` int(11) NOT NULL,
-  `private` tinyint(1) DEFAULT '0',
-  `created` datetime DEFAULT NULL,
-  `modified` datetime DEFAULT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8mb4;
+CREATE TABLE IF NOT EXISTS "trains" (
+  "id" int(11) NOT NULL,
+  "name" varchar(191) NOT NULL,
+  "origin_station" int(11) NOT NULL,
+  "final_station" int(11) NOT NULL,
+  "private" tinyint(1) DEFAULT '0',
+  "created" datetime DEFAULT NULL,
+  "modified" datetime DEFAULT NULL
+);
 
 --
 -- Contenu de la table `trains`
@@ -156,15 +165,14 @@ INSERT INTO `trains` (`id`, `name`, `origin_station`, `final_station`, `private`
 -- Structure de la table `users`
 --
 
-DROP TABLE IF EXISTS `users`;
-CREATE TABLE IF NOT EXISTS `users` (
-  `id` int(11) NOT NULL,
-  `email` varchar(255) NOT NULL,
-  `role` int(11) NOT NULL DEFAULT '0',
-  `password` varchar(255) NOT NULL,
-  `created` datetime DEFAULT NULL,
-  `modified` datetime DEFAULT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=latin1;
+CREATE TABLE IF NOT EXISTS "users" (
+  "id" int(11) NOT NULL,
+  "email" varchar(255) NOT NULL,
+  "role" int(11) NOT NULL DEFAULT '0',
+  "password" varchar(255) NOT NULL,
+  "created" datetime DEFAULT NULL,
+  "modified" datetime DEFAULT NULL
+);
 
 --
 -- Contenu de la table `users`
@@ -190,85 +198,98 @@ INSERT INTO `users` (`id`, `email`, `role`, `password`, `created`, `modified`) V
 --
 
 --
+-- Index pour la table `i18n`
+--
+ALTER TABLE `i18n`
+  ADD PRIMARY KEY ("id"),
+  ADD UNIQUE KEY "I18N_LOCALE_FIELD" ("locale","model","foreign_key","field"),
+  ADD KEY "I18N_FIELD" ("model","foreign_key","field");
+
+--
 -- Index pour la table `passengers`
 --
 ALTER TABLE `passengers`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `passengers_ibfk_1` (`train_id`),
-  ADD KEY `passengers_ibfk_2` (`user_id`);
+  ADD PRIMARY KEY ("id"),
+  ADD KEY "passengers_ibfk_1" ("train_id"),
+  ADD KEY "passengers_ibfk_2" ("user_id");
 
 --
 -- Index pour la table `roles`
 --
 ALTER TABLE `roles`
-  ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `role_name` (`role_name`);
+  ADD PRIMARY KEY ("id"),
+  ADD UNIQUE KEY "role_name" ("role_name");
 
 --
 -- Index pour la table `stations`
 --
 ALTER TABLE `stations`
-  ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `name` (`name`),
-  ADD KEY `fk_stationType` (`type`);
+  ADD PRIMARY KEY ("id"),
+  ADD UNIQUE KEY "name" ("name"),
+  ADD KEY "fk_stationType" ("type");
 
 --
 -- Index pour la table `station_types`
 --
 ALTER TABLE `station_types`
-  ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `type` (`type`);
+  ADD PRIMARY KEY ("id"),
+  ADD UNIQUE KEY "type" ("type");
 
 --
 -- Index pour la table `trains`
 --
 ALTER TABLE `trains`
-  ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `name` (`name`),
-  ADD KEY `fk_station_orig` (`origin_station`),
-  ADD KEY `fk_station_finale` (`final_station`);
+  ADD PRIMARY KEY ("id"),
+  ADD UNIQUE KEY "name" ("name"),
+  ADD KEY "fk_station_orig" ("origin_station"),
+  ADD KEY "fk_station_finale" ("final_station");
 
 --
 -- Index pour la table `users`
 --
 ALTER TABLE `users`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `role` (`role`);
+  ADD PRIMARY KEY ("id"),
+  ADD KEY "role" ("role");
 
 --
 -- AUTO_INCREMENT pour les tables exportées
 --
 
 --
+-- AUTO_INCREMENT pour la table `i18n`
+--
+ALTER TABLE `i18n`
+  MODIFY "id" int(11) NOT NULL AUTO_INCREMENT;
+--
 -- AUTO_INCREMENT pour la table `passengers`
 --
 ALTER TABLE `passengers`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
+  MODIFY "id" int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT pour la table `roles`
 --
 ALTER TABLE `roles`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+  MODIFY "id" int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT pour la table `stations`
 --
 ALTER TABLE `stations`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=20;
+  MODIFY "id" int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT pour la table `station_types`
 --
 ALTER TABLE `station_types`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
+  MODIFY "id" int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT pour la table `trains`
 --
 ALTER TABLE `trains`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=21;
+  MODIFY "id" int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT pour la table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=33;
+  MODIFY "id" int(11) NOT NULL AUTO_INCREMENT;
 --
 -- Contraintes pour les tables exportées
 --
@@ -277,27 +298,27 @@ ALTER TABLE `users`
 -- Contraintes pour la table `passengers`
 --
 ALTER TABLE `passengers`
-  ADD CONSTRAINT `passengers_ibfk_1` FOREIGN KEY (`train_id`) REFERENCES `trains` (`id`) ON DELETE CASCADE,
-  ADD CONSTRAINT `passengers_ibfk_2` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE;
+  ADD CONSTRAINT "passengers_ibfk_1" FOREIGN KEY ("train_id") REFERENCES "trains" ("id") ON DELETE CASCADE,
+  ADD CONSTRAINT "passengers_ibfk_2" FOREIGN KEY ("user_id") REFERENCES "users" ("id") ON DELETE CASCADE;
 
 --
 -- Contraintes pour la table `stations`
 --
 ALTER TABLE `stations`
-  ADD CONSTRAINT `fk_stationType` FOREIGN KEY (`type`) REFERENCES `station_types` (`id`);
+  ADD CONSTRAINT "fk_stationType" FOREIGN KEY ("type") REFERENCES "station_types" ("id");
 
 --
 -- Contraintes pour la table `trains`
 --
 ALTER TABLE `trains`
-  ADD CONSTRAINT `fk_station_finale` FOREIGN KEY (`final_station`) REFERENCES `stations` (`id`),
-  ADD CONSTRAINT `fk_station_orig` FOREIGN KEY (`origin_station`) REFERENCES `stations` (`id`);
+  ADD CONSTRAINT "fk_station_finale" FOREIGN KEY ("final_station") REFERENCES "stations" ("id"),
+  ADD CONSTRAINT "fk_station_orig" FOREIGN KEY ("origin_station") REFERENCES "stations" ("id");
 
 --
 -- Contraintes pour la table `users`
 --
 ALTER TABLE `users`
-  ADD CONSTRAINT `fk_role` FOREIGN KEY (`role`) REFERENCES `roles` (`id`);
+  ADD CONSTRAINT "fk_role" FOREIGN KEY ("role") REFERENCES "roles" ("id");
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

@@ -26,7 +26,8 @@ class TrainsControllerTest extends IntegrationTestCase
      */
     public function testIndex()
     {
-        $this->markTestIncomplete('Not implemented yet.');
+        $this->get('/trains');
+        $this->assertResponseOk();
     }
 
     /**
@@ -36,7 +37,10 @@ class TrainsControllerTest extends IntegrationTestCase
      */
     public function testView()
     {
-        $this->markTestIncomplete('Not implemented yet.');
+		$this->get('/clients/view/1');
+		$this->assertResponseContains('');
+		$this->assertResponseOk();
+        //$this->markTestIncomplete('Not implemented yet.');
     }
 
     /**

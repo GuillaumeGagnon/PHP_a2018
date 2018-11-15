@@ -16,6 +16,7 @@ namespace App\Controller;
 
 use Cake\Controller\Controller;
 use Cake\Event\Event;
+use Cake\I18n\I18n;
 
 /**
  * Application Controller
@@ -40,7 +41,12 @@ class AppController extends Controller
     public function initialize()
     {
         parent::initialize();
-
+		
+		$_SESSION = [];
+		
+	
+	I18n::setLocale($this->request->getSession()->read('Config.language'));
+		
         $this->loadComponent('RequestHandler', [
             'enableBeforeRedirect' => false,
         ]);
@@ -67,7 +73,7 @@ class AppController extends Controller
 
         // Permet à l'action "display" de notre PagesController de continuer
         // à fonctionner. Autorise également les actions "read-only".
-        $this->Auth->allow(['display', 'about'/*, 'view', 'index'*/]);
+        $this->Auth->allow(['display', 'about', 'changeLang'/*, 'view', 'index'*/]);
 		
 		
     }
@@ -97,6 +103,12 @@ class AppController extends Controller
 		// Par défaut, on refuse l'accès.
 		return false;
 	}
+	
+	public function changeLang($lang = 'en_US') {
+        I18n::setLocale($lang);
+        $this->request->session()->write('Config.language', $lang);
+        return $this->redirect($this->request->referer());
+    }
 	
 	
 }

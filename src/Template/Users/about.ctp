@@ -55,7 +55,9 @@
 	<h5>420-5b7 MO Applications internet</h5>
 	<h5>Automne 2018, Collège Montmorency</h5>
 	<br>
-	
+	<p>
+		<a target="_blank" href="https://github.com/GuillaumeGagnon/PHP_a2018.git">Lien GitHub</a>
+	</p>
 	<p>
 		Les menus (horizontal et vertical) changent si on se connecte en tant que membre.
 		<br> 
@@ -68,14 +70,34 @@
 	
 	<p>
 		La traduction du fichier *.pot en *.po n'est pas complète.
-		<br>La table i18n est créée mais elle n'est pas encore utilisée (manque de temps)
+		<br>
+		La table i18n est créée mais elle n'est pas encore utilisée (manque de temps)
 		<br>
 		Le "behavior" Translate n'est pas implanter
+		</br>
+		Le téléversement d'imgage aussi est manquant pour le moment.
+		</br>
+		L'envoie de courriels n'est pas implanter pour le moment.
 	</p>
-	
-	<p>Le téléversement d'imgage aussi est manquant pour le moment.</p>
-	<p>L'envoie de courriels n'est pas implanter pour le moment.</p>
-	<p>La base de données n'est pas encore sous SQLite.</p>
+	<br/>
+	<h3>TP2 :</h3>
+	<p>Le menu horizontal (navbar) est maintenant géré avec Bootstrap</p>
+	<p>La fonction autocomplete de JQuery UI est implémentée dans la page index du controlleur "Trains" Le champs de recherche de nom de train autocomplete l'entré utilisateur.</p>
+	<p>La base de données est maintenant sous SQLite.</p>
+	<p>On peut enregistrer sous pdf les pages "view" du controlleur "Trains"
+		</br>
+		(L'application suppose que "wkhtmltopdf" est installé ici : "C:\wkhtmltopdf\bin")
+	</p>
+	<p>Migration a été utilisée et contient la version initiale de la BD
+		</br>
+		Les données ont étées exportées dans le dossier "Seeds"
+	</p>
+	<p>Les tests n'ont pas encore étés écrits même si PHPunit est installé.
+		</br>
+		Début du codage des tests. Génération de la page "coverage"("webroot\coverage\index.hmtl").
+	</p>
+	<h1>ATTENTION</h1>
+	<h3>Pour une raison que j'ignore, lorsque j'ai roulé mes tests, mon fichier de base de données (sqlite.sqlite) à été vidé de ses tables. J'ai beaucoup cherché mais par manque de temps je n'ai toujours pas trouvé de solution.</h3>
 	
 	<img src="../img/diagramme.JPG" alt="diagramme de la base de données">
 	<a href="../img/diagramme.JPG">Ouvrir l'original</a>

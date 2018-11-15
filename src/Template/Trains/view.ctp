@@ -58,6 +58,7 @@
 </nav>
 <div class="trains view large-9 medium-8 columns content">
     <h3><?= h($train->name) ?></h3>
+	<?= $this->Form->postButton('Save to PDF', ['controller' => 'Trains', 'action' => 'toPDF', $train->id]) ?>
     <table class="vertical-table">
         <tr>
             <th scope="row"><?= __('Name') ?></th>

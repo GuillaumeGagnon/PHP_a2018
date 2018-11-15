@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "POT-Creation-Date: 2018-10-12 03:21+0000\n"
-"PO-Revision-Date: 2018-10-11 23:32-0400\n"
+"PO-Revision-Date: 2018-10-12 22:38-0400\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,7 +17,7 @@ msgstr ""
 
 #: Controller/PassengersController.php:70;108
 msgid "The passenger has been saved."
-msgstr "Le passager a été sauvegarder."
+msgstr "Le passager a été sauvegardé."
 
 #: Controller/PassengersController.php:74;112
 msgid "The passenger could not be saved. Please, try again."
@@ -49,85 +49,83 @@ msgstr "Le type de station a été effacé."
 #: Controller/StationTypesController.php:128
 msgid "The station type could not be deleted. Please, try again."
 msgstr ""
+"Le type de station n'a pas pu être effacé. S'il vous plaît, essayez encore."
 
 #: Controller/StationsController.php:83;114
-#, fuzzy
 msgid "The station has been saved."
-msgstr "Le passager a été sauegarder."
+msgstr "La station a été sauvegardé."
 
 #: Controller/StationsController.php:87;118
 msgid "The station could not be saved. Please, try again."
 msgstr ""
+"La station n'a pas pu être enregistré. S'il vous plaît, essayez encore."
 
 #: Controller/StationsController.php:141
-#, fuzzy
 msgid "The station has been deleted."
-msgstr "Le passager a été sauegarder."
+msgstr "La station a été effacé."
 
 #: Controller/StationsController.php:143
 msgid "The station could not be deleted. Please, try again."
-msgstr ""
+msgstr "La station n'a pas pu être effacé. S'il vous plaît, essayez encore."
 
 #: Controller/TrainsController.php:81;112
-#, fuzzy
 msgid "The train has been saved."
-msgstr "Le passager a été sauegarder."
+msgstr "Le train a été sauvegardé."
 
 #: Controller/TrainsController.php:85;116
 msgid "The train could not be saved. Please, try again."
-msgstr ""
+msgstr "Le train n'a pas pus être sauvegardé. Veuillez essayer de nouveau."
 
 #: Controller/TrainsController.php:136
-#, fuzzy
 msgid "The train has been deleted."
-msgstr "Le passager a été sauegarder."
+msgstr "Le train a été effacé."
 
 #: Controller/TrainsController.php:138
 msgid "The train could not be deleted. Please, try again."
-msgstr ""
+msgstr "Le train n'a pas pus être effacé. Veuillez essayer de nouveau."
 
 #: Controller/UsersController.php:154
 msgid "The user has been saved and you have been redirected to your profile."
 msgstr ""
+"L'utilisateur a été sauvegardé et vous avez été redirigé sur votre profil."
 
 #: Controller/UsersController.php:158;186
 msgid "The user could not be saved. Please, try again."
 msgstr ""
+"L'utilisateur n'a pas pus être sauvegardé. Veuillez essayer de nouveau."
 
 #: Controller/UsersController.php:182
-#, fuzzy
 msgid "The user has been saved."
-msgstr "Le passager a été sauegarder."
+msgstr "L'utilisateur a été sauvegardé."
 
 #: Controller/UsersController.php:206
-#, fuzzy
 msgid "The user has been deleted."
-msgstr "Le passager a été sauegarder."
+msgstr "L'utilisateur a été effacé."
 
 #: Controller/UsersController.php:208
 msgid "The user could not be deleted. Please, try again."
-msgstr ""
+msgstr "L'utilisateur n'a pas pus être effacé. Veuillez essayer de nouveau."
 
 #: Template/Layout/default.ctp:55
 msgid "Login"
-msgstr ""
+msgstr "Se connecter"
 
 #: Template/Layout/default.ctp:58
 msgid "Logout"
-msgstr ""
+msgstr "Se déconnecter"
 
 #: Template/Layout/default.ctp:59
 msgid "About"
-msgstr ""
+msgstr "À propos"
 
 #: Template/Layout/error.ctp:35 Template/Error/error400.ctp:36
 #: Template/Error/error500.ctp:41
 msgid "Error"
-msgstr ""
+msgstr "Erreur"
 
 #: Template/Layout/error.ctp:43
 msgid "Back"
-msgstr ""
+msgstr "Retour"
 
 #: Template/Passengers/add.ctp:17 Template/Passengers/edit.ctp:18
 #: Template/Passengers/index.ctp:17;71 Template/Passengers/view.ctp:17
@@ -143,7 +141,7 @@ msgstr ""
 #: Template/Users/add.ctp:17 Template/Users/edit.ctp:17
 #: Template/Users/index.ctp:17;61 Template/Users/view.ctp:16;96
 msgid "Actions"
-msgstr ""
+msgstr "Actions"
 
 #: Template/Passengers/add.ctp:21 Template/Passengers/edit.ctp:26
 #: Template/Passengers/index.ctp:21 Template/Passengers/view.ctp:26
@@ -157,7 +155,7 @@ msgstr ""
 #: Template/Users/add.ctp:21 Template/Users/edit.ctp:25
 #: Template/Users/index.ctp:21 Template/Users/view.ctp:25
 msgid "List Users"
-msgstr ""
+msgstr "Lister les Utilisateurs"
 
 #: Template/Passengers/add.ctp:22 Template/Passengers/edit.ctp:27
 #: Template/Passengers/index.ctp:22 Template/Passengers/view.ctp:27
@@ -173,7 +171,7 @@ msgstr ""
 #: Template/Users/edit.ctp:26 Template/Users/index.ctp:22
 #: Template/Users/view.ctp:26
 msgid "List Roles"
-msgstr ""
+msgstr "Lister les Rôles"
 
 #: Template/Passengers/add.ctp:23 Template/Passengers/edit.ctp:28
 #: Template/Passengers/index.ctp:23 Template/Passengers/view.ctp:28
@@ -187,7 +185,7 @@ msgstr ""
 #: Template/Users/add.ctp:23 Template/Users/edit.ctp:27
 #: Template/Users/index.ctp:23 Template/Users/view.ctp:27
 msgid "New Train"
-msgstr ""
+msgstr "Nouveau Train"
 
 #: Template/Passengers/add.ctp:25 Template/Passengers/edit.ctp:30
 #: Template/Passengers/index.ctp:25 Template/Passengers/view.ctp:30
@@ -201,7 +199,7 @@ msgstr ""
 #: Template/Users/add.ctp:25 Template/Users/edit.ctp:29
 #: Template/Users/index.ctp:25 Template/Users/view.ctp:29
 msgid "New Station"
-msgstr ""
+msgstr "Nouvelle Station"
 
 #: Template/Passengers/add.ctp:26 Template/Passengers/edit.ctp:31
 #: Template/Passengers/index.ctp:26 Template/Passengers/view.ctp:31
@@ -215,7 +213,7 @@ msgstr ""
 #: Template/Users/add.ctp:26 Template/Users/edit.ctp:30
 #: Template/Users/index.ctp:26 Template/Users/view.ctp:30
 msgid "New Station Type"
-msgstr ""
+msgstr "Nouveau Type de Station"
 
 #: Template/Passengers/add.ctp:37 Template/Passengers/edit.ctp:42
 #: Template/Passengers/index.ctp:37 Template/Passengers/view.ctp:42
@@ -257,7 +255,7 @@ msgstr "Nouveau Passager"
 #: Template/Users/add.ctp:44 Template/Users/edit.ctp:48
 #: Template/Users/index.ctp:44 Template/Users/view.ctp:48
 msgid "New User"
-msgstr ""
+msgstr "Nouvel Utilisateur"
 
 #: Template/Passengers/add.ctp:45 Template/Passengers/edit.ctp:50
 #: Template/Passengers/index.ctp:45 Template/Passengers/view.ctp:50
@@ -271,7 +269,7 @@ msgstr ""
 #: Template/Users/add.ctp:45 Template/Users/edit.ctp:49
 #: Template/Users/index.ctp:45 Template/Users/view.ctp:49
 msgid "List Trains"
-msgstr ""
+msgstr "Lister les Trains"
 
 #: Template/Passengers/add.ctp:46 Template/Passengers/edit.ctp:51
 #: Template/Passengers/index.ctp:46 Template/Passengers/view.ctp:51
@@ -285,7 +283,7 @@ msgstr ""
 #: Template/Users/add.ctp:46 Template/Users/edit.ctp:50
 #: Template/Users/index.ctp:46 Template/Users/view.ctp:50
 msgid "List Stations"
-msgstr ""
+msgstr "Lister les Stations"
 
 #: Template/Passengers/add.ctp:47 Template/Passengers/edit.ctp:52
 #: Template/Passengers/index.ctp:47 Template/Passengers/view.ctp:52
@@ -299,7 +297,7 @@ msgstr ""
 #: Template/Users/add.ctp:47 Template/Users/edit.ctp:51
 #: Template/Users/index.ctp:47 Template/Users/view.ctp:51
 msgid "List Station Types"
-msgstr ""
+msgstr "Lister les Types de Station"
 
 #: Template/Passengers/add.ctp:56
 msgid "Add Passenger"
@@ -330,7 +328,7 @@ msgstr "Effacer le Passager"
 #: Template/Trains/view.ctp:22 Template/Users/edit.ctp:20
 #: Template/Users/index.ctp:73 Template/Users/view.ctp:20;108
 msgid "Are you sure you want to delete # {0}?"
-msgstr ""
+msgstr "Êtes-vous certain(e) de vouloir supprimer # {0}?"
 
 #: Template/Passengers/edit.ctp:61 Template/Passengers/view.ctp:20
 msgid "Edit Passenger"
@@ -338,7 +336,7 @@ msgstr "Modifier le Passager"
 
 #: Template/Passengers/index.ctp:54
 msgid "Passengers"
-msgstr ""
+msgstr "Passagers"
 
 #: Template/Passengers/index.ctp:88;109 Template/Roles/index.ctp:69
 #: Template/Roles/Nouveau dossier/index.ctp:29
@@ -346,7 +344,7 @@ msgstr ""
 #: Template/Trains/index.ctp:80 Template/Users/index.ctp:71
 #: Template/Users/view.ctp:106 View/Helper/PaginatorHelper.php:1212
 msgid "View"
-msgstr ""
+msgstr "Afficher"
 
 #: Template/Passengers/index.ctp:89;110 Template/Roles/index.ctp:70
 #: Template/Roles/Nouveau dossier/index.ctp:30
@@ -354,7 +352,7 @@ msgstr ""
 #: Template/Trains/index.ctp:81 Template/Users/index.ctp:72
 #: Template/Users/view.ctp:107
 msgid "Edit"
-msgstr ""
+msgstr "Modifier"
 
 #: Template/Passengers/index.ctp:90;111 Template/Roles/index.ctp:71
 #: Template/Roles/Nouveau dossier/edit.ctp:11 dossier/index.ctp:31
@@ -362,35 +360,35 @@ msgstr ""
 #: Template/Trains/index.ctp:82 Template/Users/index.ctp:73
 #: Template/Users/view.ctp:108
 msgid "Delete"
-msgstr ""
+msgstr "Effacer"
 
 #: Template/Passengers/index.ctp:123 Template/Roles/index.ctp:79
 #: Template/Roles/Nouveau dossier/index.ctp:39
 #: Template/StationTypes/index.ctp:85 Template/Stations/index.ctp:85
 #: Template/Trains/index.ctp:90 Template/Users/index.ctp:81
 msgid "first"
-msgstr ""
+msgstr "premier"
 
 #: Template/Passengers/index.ctp:124 Template/Roles/index.ctp:80
 #: Template/Roles/Nouveau dossier/index.ctp:40
 #: Template/StationTypes/index.ctp:86 Template/Stations/index.ctp:86
 #: Template/Trains/index.ctp:91 Template/Users/index.ctp:82
 msgid "previous"
-msgstr ""
+msgstr "précédent"
 
 #: Template/Passengers/index.ctp:126 Template/Roles/index.ctp:82
 #: Template/Roles/Nouveau dossier/index.ctp:42
 #: Template/StationTypes/index.ctp:88 Template/Stations/index.ctp:88
 #: Template/Trains/index.ctp:93 Template/Users/index.ctp:84
 msgid "next"
-msgstr ""
+msgstr "suivant"
 
 #: Template/Passengers/index.ctp:127 Template/Roles/index.ctp:83
 #: Template/Roles/Nouveau dossier/index.ctp:43
 #: Template/StationTypes/index.ctp:89 Template/Stations/index.ctp:89
 #: Template/Trains/index.ctp:94 Template/Users/index.ctp:85
 msgid "last"
-msgstr ""
+msgstr "dernier"
 
 #: Template/Passengers/index.ctp:129 Template/Roles/index.ctp:85
 #: Template/Roles/Nouveau dossier/index.ctp:45
@@ -400,31 +398,32 @@ msgid ""
 "Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} "
 "total"
 msgstr ""
+"Page {{page}} sur {{pages}}, affiche {{current}} élément(s) sur {{count}}"
 
 #: Template/Passengers/view.ctp:62
 msgid "User"
-msgstr ""
+msgstr "Utilisateur"
 
 #: Template/Passengers/view.ctp:66 Template/Users/view.ctp:94
 msgid "Train"
-msgstr ""
+msgstr "Train"
 
 #: Template/Passengers/view.ctp:70 Template/Stations/view.ctp:63
 #: Template/Trains/view.ctp:63 Template/Users/view.ctp:95
 msgid "Name"
-msgstr ""
+msgstr "Nom"
 
 #: Template/Passengers/view.ctp:74
 msgid "Address"
-msgstr ""
+msgstr "Adresse"
 
 #: Template/Passengers/view.ctp:78
 msgid "Phone"
-msgstr ""
+msgstr "Téléphone"
 
 #: Template/Passengers/view.ctp:82
 msgid "Other"
-msgstr ""
+msgstr "Autre"
 
 #: Template/Passengers/view.ctp:86 Template/Roles/Nouveau dossier/view.ctp:24
 #: dossier/view_original.ctp:24 Template/StationTypes/view.ctp:71
@@ -437,151 +436,151 @@ msgstr ""
 #: Template/Stations/view.ctp:75 Template/Trains/view.ctp:79
 #: Template/Users/view.ctp:79
 msgid "Created"
-msgstr ""
+msgstr "Créé"
 
 #: Template/Passengers/view.ctp:94 Template/StationTypes/view.ctp:79
 #: Template/Stations/view.ctp:79 Template/Trains/view.ctp:83
 #: Template/Users/view.ctp:83
 msgid "Modified"
-msgstr ""
+msgstr "Modifié"
 
 #: Template/Roles/index.ctp:54 Template/Roles/Nouveau dossier/index.ctp:14
 msgid "Roles"
-msgstr ""
+msgstr "Rôles"
 
 #: Template/Roles/Nouveau dossier/add.ctp:16
 msgid "Add Role"
-msgstr ""
+msgstr "Ajouter un Rôle"
 
 #: Template/Roles/Nouveau dossier/edit.ctp:22 dossier/view.ctp:10
 #: dossier/view_original.ctp:10
 msgid "Edit Role"
-msgstr ""
+msgstr "Modifier le Rôle"
 
 #: Template/Roles/Nouveau dossier/index.ctp:10 dossier/view.ctp:13
 #: dossier/view_original.ctp:13
 msgid "New Role"
-msgstr ""
+msgstr "Nouveau Rôle"
 
 #: Template/Roles/Nouveau dossier/view.ctp:11 dossier/view_original.ctp:11
 msgid "Delete Role"
-msgstr ""
+msgstr "Effacer le Rôle"
 
 #: Template/Roles/Nouveau dossier/view.ctp:20 dossier/view_original.ctp:20
 msgid "Role Name"
-msgstr ""
+msgstr "Nom du Rôle"
 
 #: Template/StationTypes/add.ctp:56
 msgid "Add Station Type"
-msgstr ""
+msgstr "Ajouter un Type de Station"
 
 #: Template/StationTypes/edit.ctp:20 Template/StationTypes/view.ctp:22
 msgid "Delete Station Type"
-msgstr ""
+msgstr "Effacer le Type de Station"
 
 #: Template/StationTypes/edit.ctp:60 Template/StationTypes/view.ctp:21
 msgid "Edit Station Type"
-msgstr ""
+msgstr "Modifier le Type de Station"
 
 #: Template/StationTypes/index.ctp:54
 msgid "Station Types"
-msgstr ""
+msgstr "Types de Station"
 
 #: Template/StationTypes/view.ctp:63 Template/Stations/view.ctp:67
 msgid "Type"
-msgstr ""
+msgstr "Type"
 
 #: Template/StationTypes/view.ctp:67
 msgid "Description"
-msgstr ""
+msgstr "Description"
 
 #: Template/Stations/add.ctp:56
 msgid "Add Station"
-msgstr ""
+msgstr "Ajouter une Station"
 
 #: Template/Stations/edit.ctp:20 Template/Stations/view.ctp:22
 msgid "Delete Station"
-msgstr ""
+msgstr "Effacer la Station"
 
 #: Template/Stations/edit.ctp:60 Template/Stations/view.ctp:21
 msgid "Edit Station"
-msgstr ""
+msgstr "Modifier la Station"
 
 #: Template/Stations/index.ctp:54
 msgid "Stations"
-msgstr ""
+msgstr "Stations"
 
 #: Template/Trains/add.ctp:57
 msgid "Add Train"
-msgstr ""
+msgstr "Ajouter un Train"
 
 #: Template/Trains/edit.ctp:20 Template/Trains/view.ctp:22
 msgid "Delete Train"
-msgstr ""
+msgstr "Effacer le Train"
 
 #: Template/Trains/edit.ctp:60 Template/Trains/view.ctp:21
 msgid "Edit Train"
-msgstr ""
+msgstr "Modifier le Train"
 
 #: Template/Trains/index.ctp:55
 msgid "Trains"
-msgstr ""
+msgstr "Trains"
 
 #: Template/Trains/view.ctp:67
 msgid "Origin Station"
-msgstr ""
+msgstr "Station d'origine"
 
 #: Template/Trains/view.ctp:71
 msgid "Final Station"
-msgstr ""
+msgstr "Station finale"
 
 #: Template/Trains/view.ctp:87
 msgid "Private"
-msgstr ""
+msgstr "Privé"
 
 #: Template/Trains/view.ctp:88
 msgid "Yes"
-msgstr ""
+msgstr "Oui"
 
 #: Template/Trains/view.ctp:88
 msgid "No"
-msgstr ""
+msgstr "Non"
 
 #: Template/Users/add.ctp:56
 msgid "Add User"
-msgstr ""
+msgstr "Ajouter un Utilisateur"
 
 #: Template/Users/edit.ctp:20 Template/Users/view.ctp:20
 msgid "Delete User"
-msgstr ""
+msgstr "Effacer l'Utilisateur"
 
 #: Template/Users/edit.ctp:60 Template/Users/view.ctp:19
 msgid "Edit User"
-msgstr ""
+msgstr "Modifier l'Utilisateur"
 
 #: Template/Users/index.ctp:54
 msgid "Users"
-msgstr ""
+msgstr "Utilisateurs"
 
 #: Template/Users/view.ctp:62
 msgid "Email"
-msgstr ""
+msgstr "Email"
 
 #: Template/Users/view.ctp:66
 msgid "Role"
-msgstr ""
+msgstr "Rôle"
 
 #: Template/Users/view.ctp:71
 msgid "Password"
-msgstr ""
+msgstr "Mot de passe"
 
 #: Template/Users/view.ctp:88
 msgid "Related Passengers"
-msgstr ""
+msgstr "Passagers liés"
 
 #: Template/Users/view.ctp:90
 msgid "*A user can be used by more than one person"
-msgstr ""
+msgstr "*Une Utilisateur peut être utilisé par plusieurs personnes"
 
 #: Template/Error/error400.ctp:37
 msgid "The requested address {0} was not found on this server."
@@ -593,7 +592,7 @@ msgstr ""
 
 #: Controller/Component/AuthComponent.php:500
 msgid "You are not authorized to access that location."
-msgstr ""
+msgstr "Vous n'êtes pas autorisé à accéder à cette partie du site."
 
 #: Controller/Component/CsrfComponent.php:162
 #: Http/Middleware/CsrfProtectionMiddleware.php:191
@@ -775,11 +774,11 @@ msgstr[1] ""
 
 #: ORM/RulesChecker.php:57
 msgid "This value is already in use"
-msgstr ""
+msgstr "Cette valeur est déjà utilisée"
 
 #: ORM/RulesChecker.php:104
 msgid "This value does not exist"
-msgstr ""
+msgstr "Cette valeur n'existe pas"
 
 #: ORM/RulesChecker.php:128
 msgid "The count does not match {0}{1}"
@@ -787,31 +786,31 @@ msgstr ""
 
 #: Utility/Text.php:917
 msgid "and"
-msgstr ""
+msgstr "et"
 
 #: Validation/Validator.php:111
 msgid "This field is required"
-msgstr ""
+msgstr "Champs requis"
 
 #: Validation/Validator.php:112
 msgid "This field cannot be left empty"
-msgstr ""
+msgstr "Ce champs ne peut pas être vide"
 
 #: Validation/Validator.php:2054
 msgid "The provided value is invalid"
-msgstr ""
+msgstr "Valeur invalide"
 
 #: View/Helper/FormHelper.php:1099
 msgid "Edit {0}"
-msgstr ""
+msgstr "Modifier {0}"
 
 #: View/Helper/FormHelper.php:1101
 msgid "New {0}"
-msgstr ""
+msgstr "Nouveau {0}"
 
 #: View/Helper/HtmlHelper.php:815
 msgid "Home"
-msgstr ""
+msgstr "Acceuil"
 
 #: View/Widget/DateTimeWidget.php:540
 msgid "January"

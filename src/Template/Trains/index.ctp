@@ -1,4 +1,17 @@
 <?php
+
+$urlToCarsAutocompletedemoJson = $this->Url->build([
+    "controller" => "trains",
+    "action" => "trouverTrain",
+    "_ext" => "json"
+        ]);
+
+echo $this->Html->scriptBlock('var urlToAutocompleteAction = "' . $urlToCarsAutocompletedemoJson . '";', ['block' => true]);
+echo $this->Html->script('trains/autocompletetrains', ['block' => 'scriptBottom']);
+?>
+
+
+<?php
 /**
  * @var \App\View\AppView $this
  * @var \App\Model\Entity\Train[]|\Cake\Collection\CollectionInterface $trains
@@ -53,6 +66,16 @@
 </nav>
 <div class="trains index large-9 medium-8 columns content">
     <h3><?= __('Trains') ?></h3>
+	
+		
+		<fieldset>
+			<legend><?= __('Chercher un nom de train (autocomplete)') ?></legend>
+			<?php
+			echo $this->Form->input('name', ['id' => 'autocomplete']);
+			?>
+		</fieldset>
+	
+	
     <table cellpadding="0" cellspacing="0">
         <thead>
             <tr>

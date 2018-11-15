@@ -35,6 +35,10 @@ class Application extends BaseApplication
      */
     public function bootstrap()
     {
+        $this->addPlugin('BootstrapUI');
+
+        $this->addPlugin('Migrations');
+
         $this->addPlugin('Cake/Localized');
 
         // Call parent to load bootstrap from files.
