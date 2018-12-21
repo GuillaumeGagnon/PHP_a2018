@@ -71,7 +71,7 @@ echo $this->Html->script('trains/autocompletetrains', ['block' => 'scriptBottom'
 		<fieldset>
 			<legend><?= __('Chercher un nom de train (autocomplete)') ?></legend>
 			<?php
-			echo $this->Form->input('name', ['id' => 'autocomplete']);
+			echo $this->Form->control('name', ['id' => 'autocomplete']);
 			?>
 		</fieldset>
 	

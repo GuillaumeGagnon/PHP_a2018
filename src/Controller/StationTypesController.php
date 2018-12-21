@@ -23,7 +23,37 @@ class StationTypesController extends AppController
 		$this->Auth->allow('view');
 		$this->Auth->allow('index');
 
-	}
+    }
+
+    public function getTypes() {
+        $this->autoRender = false; // avoid to render view
+
+        $this->loadModel('stations');
+
+        $stations = $this->StationTypes->find('all', [
+            'contain' => ['Stations'],
+        ]);
+        $stationsJ = json_encode($stations);
+        $this->response->type('json');
+        $this->response->body($stationsJ);
+    }
+
+
+
+    public function getCategories() {
+        $this->autoRender = false; // avoid to render view
+
+        $StationTypes = $this->StationTypes->find('all', [
+            'contain' => ['Subcategories'],
+        ]);
+
+        $StationTypesJ = json_encode($StationTypes);
+        $this->response->type('json');
+        $this->response->body($StationTypesJ);
+
+    }
+    
+    
 	
 
     /**

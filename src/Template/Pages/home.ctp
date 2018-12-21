@@ -38,7 +38,7 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
         <?= $cakeDescription ?>
     </title>
 	
-	<meta http-equiv="refresh" content="0; url=//localhost/PHP/trains" />
+	<meta http-equiv="refresh" content="0; url=http://localhost/PHP/trains" />
 
 
     <?= $this->Html->meta('icon') ?>
@@ -49,7 +49,7 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
 </head>
 <body class="home">
 	
-	<p><a href="//localhost/PHP/trains">Redirect</a></p>
+	<p><a href="http://localhost/PHP/trains">Redirect</a></p>
 
 </body>
 </html>

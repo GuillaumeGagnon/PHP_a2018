@@ -18,7 +18,7 @@ class TrainsController extends AppController
 	public function initialize()
 	{
 		parent::initialize();
-		$this->Auth->allow('trouverTrain', 'autocompletetrains', 'autocomplete', 'display', 'view', 'index');
+		$this->Auth->allow('trouverTrain', 'autocompletetrains', 'autocomplete', 'display', 'view', 'index', 'toPDf');
 	}
 
     /**
@@ -72,13 +72,18 @@ class TrainsController extends AppController
      *
      * @return \Cake\Http\Response|null Redirects on successful add, renders view otherwise.
      */
+
+
+
+
+
+
+
+
     public function add()
-    {
-		
-		
-		$this->Auth->user('id'); // rend $_SESSION accessible dans le template
-		
-		
+    {		
+        $this->Auth->user('id'); // rend $_SESSION accessible dans le template
+        		
         $train = $this->Trains->newEntity();
         if ($this->request->is('post')) {
             $train = $this->Trains->patchEntity($train, $this->request->getData());
@@ -89,11 +94,47 @@ class TrainsController extends AppController
             }
             $this->Flash->error(__('The train could not be saved. Please, try again.'));
         }
+
+        $this->loadModel('Stations');
+
+        ///Liste liée
+        // Bâtir la liste des types de stations  
+        $this->loadModel('station_types');
+        $station_types = $this->station_types->find('list', ['limit' => 200]);
+        // Extraire le id de la première catégorie
+        $station_types = $station_types->toArray();
+        reset($station_types);
+        $station_types_id = key($station_types);
+
+        // Bâtir la liste des stations reliées au type
+        $this->loadModel('Stations');
+        $stations = $this->Stations->find('list', [
+            'conditions' => ['Stations.type' => $station_types_id],
+        ]);
 		
-		$this->loadModel('Stations');
-        $stations = $this->Stations->find('list')->all();
-        $this->set(compact('train', 'stations'));
+        $subcategories = $stations;
+        $categories = $station_types;
+        $this->set(compact('train', 'stations', 'station_types', 'subcategories', 'categories'));
+        $this->set('_serialize', ['train', 'stations', 'station_types', 'subcategories', 'categories']);
+
+
+
+
+
+
     }
+
+
+
+
+
+
+
+
+
+
+
+    
 
     /**
      * Edit method
@@ -153,7 +194,7 @@ class TrainsController extends AppController
 
 		$this->Auth->allow('view');
 		$this->Auth->allow('index');
-		$this->Auth->allow('trouverTrain', 'autocompletetrains', 'autocomplete');
+		$this->Auth->allow('trouverTrain', 'autocompletetrains', 'autocomplete', 'toPDf');
 
 	}
 	
@@ -164,7 +205,7 @@ class TrainsController extends AppController
 			//debug($user);
 			return true;
 		}
-		if(in_array($action, ['autocompletetrains', 'trouverTrain'])){
+		if(in_array($action, ['autocompletetrains', 'trouverTrain', 'toPDf'])){
             return true;
         }
 		return true;

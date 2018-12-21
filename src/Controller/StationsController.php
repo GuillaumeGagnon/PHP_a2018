@@ -24,7 +24,25 @@ class StationsController extends AppController
 
 	}
 	
-	
+	public function filtreListeLiees() {
+        /*$station_types_id = $this->request->query('type');
+
+        $stations = $this->Stations->find('all', [
+            'conditions' => ['Stations.type' => $station_types_id],
+        ]);
+        $this->set('stations', $stations);
+        $this->set('_serialize', ['stations']);*/
+        $category_id = $this->request->query('type');
+
+        $subcategories = $this->Stations->find('all', [
+            'conditions' => ['Stations.type' => $category_id],
+        ]);
+        $this->set('subcategories', $subcategories);
+        $this->set('_serialize', ['subcategories']);
+    }
+
+
+    
 	
 
     /**

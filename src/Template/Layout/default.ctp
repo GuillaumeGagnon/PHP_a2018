@@ -57,7 +57,11 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 		
 		'https://code.jquery.com/ui/1.12.1/jquery-ui.js',
 		
-		'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js'], 
+		'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js',
+		'https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.js'
+		
+		], 
+		
 		
 		['block' => 'scriptLibraries']
         );

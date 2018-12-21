@@ -142,8 +142,16 @@ class UsersController extends AppController
      */
     public function add()
     {
-		//debug($_SESSION['Auth']['User']['id']);
-		$id = $_SESSION['Auth']['User']['id'];
+        $id = null; // par default
+        //debug($_SESSION['Auth']['User']['id']);
+        if(array_key_exists('Auth', $_SESSION)){
+            if(array_key_exists('User', $_SESSION['Auth'])){
+                if(array_key_exists('id', $_SESSION['Auth']['User'])){
+                    $id = $_SESSION['Auth']['User']['id'];
+                }  
+            }
+        }
+		
 		$this->loadModel('Roles');
 		//$roles = $this->paginate($this->Roles);
 		//debug($roles);
