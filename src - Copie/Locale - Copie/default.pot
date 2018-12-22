@@ -1,0 +1,1057 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2018-10-12 03:21+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: Controller/PassengersController.php:70;108
+msgid "The passenger has been saved."
+msgstr ""
+
+#: Controller/PassengersController.php:74;112
+msgid "The passenger could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/PassengersController.php:131
+msgid "The passenger has been deleted."
+msgstr ""
+
+#: Controller/PassengersController.php:133
+msgid "The passenger could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/StationTypesController.php:77;105
+msgid "The station type has been saved."
+msgstr ""
+
+#: Controller/StationTypesController.php:81;109
+msgid "The station type could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/StationTypesController.php:126
+msgid "The station type has been deleted."
+msgstr ""
+
+#: Controller/StationTypesController.php:128
+msgid "The station type could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/StationsController.php:83;114
+msgid "The station has been saved."
+msgstr ""
+
+#: Controller/StationsController.php:87;118
+msgid "The station could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/StationsController.php:141
+msgid "The station has been deleted."
+msgstr ""
+
+#: Controller/StationsController.php:143
+msgid "The station could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/TrainsController.php:81;112
+msgid "The train has been saved."
+msgstr ""
+
+#: Controller/TrainsController.php:85;116
+msgid "The train could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/TrainsController.php:136
+msgid "The train has been deleted."
+msgstr ""
+
+#: Controller/TrainsController.php:138
+msgid "The train could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/UsersController.php:154
+msgid "The user has been saved and you have been redirected to your profile."
+msgstr ""
+
+#: Controller/UsersController.php:158;186
+msgid "The user could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/UsersController.php:182
+msgid "The user has been saved."
+msgstr ""
+
+#: Controller/UsersController.php:206
+msgid "The user has been deleted."
+msgstr ""
+
+#: Controller/UsersController.php:208
+msgid "The user could not be deleted. Please, try again."
+msgstr ""
+
+#: Template/Layout/default.ctp:55
+msgid "Login"
+msgstr ""
+
+#: Template/Layout/default.ctp:58
+msgid "Logout"
+msgstr ""
+
+#: Template/Layout/default.ctp:59
+msgid "About"
+msgstr ""
+
+#: Template/Layout/error.ctp:35
+#: Template/Error/error400.ctp:36
+#: Template/Error/error500.ctp:41
+msgid "Error"
+msgstr ""
+
+#: Template/Layout/error.ctp:43
+msgid "Back"
+msgstr ""
+
+#: Template/Passengers/add.ctp:17
+#: Template/Passengers/edit.ctp:18
+#: Template/Passengers/index.ctp:17;71
+#: Template/Passengers/view.ctp:17
+#: Template/Roles/index.ctp:17;60
+#: Template/Roles/Nouveau dossier/add.ctp:9
+#: Template/Roles/Nouveau dossier/edit.ctp:9
+#: Template/Roles/Nouveau dossier/index.ctp:9;20
+#: Template/Roles/Nouveau dossier/view.ctp:9
+#: Template/Roles/Nouveau dossier/view_original.ctp:9
+#: Template/StationTypes/add.ctp:17
+#: Template/StationTypes/edit.ctp:17
+#: Template/StationTypes/index.ctp:17;63
+#: Template/StationTypes/view.ctp:17
+#: Template/Stations/add.ctp:17
+#: Template/Stations/edit.ctp:17
+#: Template/Stations/index.ctp:17;63
+#: Template/Stations/view.ctp:17
+#: Template/Trains/add.ctp:18
+#: Template/Trains/edit.ctp:17
+#: Template/Trains/index.ctp:18;66
+#: Template/Trains/view.ctp:17
+#: Template/Users/about.ctp:17
+#: Template/Users/add.ctp:17
+#: Template/Users/edit.ctp:17
+#: Template/Users/index.ctp:17;61
+#: Template/Users/view.ctp:16;96
+msgid "Actions"
+msgstr ""
+
+#: Template/Passengers/add.ctp:21
+#: Template/Passengers/edit.ctp:26
+#: Template/Passengers/index.ctp:21
+#: Template/Passengers/view.ctp:26
+#: Template/Roles/index.ctp:21
+#: Template/StationTypes/add.ctp:21
+#: Template/StationTypes/edit.ctp:25
+#: Template/StationTypes/index.ctp:21
+#: Template/StationTypes/view.ctp:27
+#: Template/Stations/add.ctp:21
+#: Template/Stations/edit.ctp:25
+#: Template/Stations/index.ctp:21
+#: Template/Stations/view.ctp:27
+#: Template/Trains/add.ctp:22
+#: Template/Trains/edit.ctp:25
+#: Template/Trains/index.ctp:22
+#: Template/Trains/view.ctp:27
+#: Template/Users/about.ctp:21
+#: Template/Users/add.ctp:21
+#: Template/Users/edit.ctp:25
+#: Template/Users/index.ctp:21
+#: Template/Users/view.ctp:25
+msgid "List Users"
+msgstr ""
+
+#: Template/Passengers/add.ctp:22
+#: Template/Passengers/edit.ctp:27
+#: Template/Passengers/index.ctp:22
+#: Template/Passengers/view.ctp:27
+#: Template/Roles/index.ctp:22
+#: Template/Roles/Nouveau dossier/add.ctp:10
+#: Template/Roles/Nouveau dossier/edit.ctp:16
+#: Template/Roles/Nouveau dossier/view.ctp:12
+#: Template/Roles/Nouveau dossier/view_original.ctp:12
+#: Template/StationTypes/add.ctp:22
+#: Template/StationTypes/edit.ctp:26
+#: Template/StationTypes/index.ctp:22
+#: Template/StationTypes/view.ctp:28
+#: Template/Stations/add.ctp:22
+#: Template/Stations/edit.ctp:26
+#: Template/Stations/index.ctp:22
+#: Template/Stations/view.ctp:28
+#: Template/Trains/add.ctp:23
+#: Template/Trains/edit.ctp:26
+#: Template/Trains/index.ctp:23
+#: Template/Trains/view.ctp:28
+#: Template/Users/about.ctp:22
+#: Template/Users/add.ctp:22
+#: Template/Users/edit.ctp:26
+#: Template/Users/index.ctp:22
+#: Template/Users/view.ctp:26
+msgid "List Roles"
+msgstr ""
+
+#: Template/Passengers/add.ctp:23
+#: Template/Passengers/edit.ctp:28
+#: Template/Passengers/index.ctp:23
+#: Template/Passengers/view.ctp:28
+#: Template/Roles/index.ctp:23
+#: Template/StationTypes/add.ctp:23
+#: Template/StationTypes/edit.ctp:27
+#: Template/StationTypes/index.ctp:23
+#: Template/StationTypes/view.ctp:29
+#: Template/Stations/add.ctp:23
+#: Template/Stations/edit.ctp:27
+#: Template/Stations/index.ctp:23
+#: Template/Stations/view.ctp:29
+#: Template/Trains/add.ctp:24
+#: Template/Trains/edit.ctp:27
+#: Template/Trains/index.ctp:24
+#: Template/Trains/view.ctp:29
+#: Template/Users/about.ctp:23
+#: Template/Users/add.ctp:23
+#: Template/Users/edit.ctp:27
+#: Template/Users/index.ctp:23
+#: Template/Users/view.ctp:27
+msgid "New Train"
+msgstr ""
+
+#: Template/Passengers/add.ctp:25
+#: Template/Passengers/edit.ctp:30
+#: Template/Passengers/index.ctp:25
+#: Template/Passengers/view.ctp:30
+#: Template/Roles/index.ctp:25
+#: Template/StationTypes/add.ctp:25
+#: Template/StationTypes/edit.ctp:29
+#: Template/StationTypes/index.ctp:25
+#: Template/StationTypes/view.ctp:31
+#: Template/Stations/add.ctp:25
+#: Template/Stations/edit.ctp:29
+#: Template/Stations/index.ctp:25
+#: Template/Stations/view.ctp:31
+#: Template/Trains/add.ctp:26
+#: Template/Trains/edit.ctp:29
+#: Template/Trains/index.ctp:26
+#: Template/Trains/view.ctp:31
+#: Template/Users/about.ctp:25
+#: Template/Users/add.ctp:25
+#: Template/Users/edit.ctp:29
+#: Template/Users/index.ctp:25
+#: Template/Users/view.ctp:29
+msgid "New Station"
+msgstr ""
+
+#: Template/Passengers/add.ctp:26
+#: Template/Passengers/edit.ctp:31
+#: Template/Passengers/index.ctp:26
+#: Template/Passengers/view.ctp:31
+#: Template/Roles/index.ctp:26
+#: Template/StationTypes/add.ctp:26
+#: Template/StationTypes/edit.ctp:30
+#: Template/StationTypes/index.ctp:26
+#: Template/StationTypes/view.ctp:32
+#: Template/Stations/add.ctp:26
+#: Template/Stations/edit.ctp:30
+#: Template/Stations/index.ctp:26
+#: Template/Stations/view.ctp:32
+#: Template/Trains/add.ctp:27
+#: Template/Trains/edit.ctp:30
+#: Template/Trains/index.ctp:27
+#: Template/Trains/view.ctp:32
+#: Template/Users/about.ctp:26
+#: Template/Users/add.ctp:26
+#: Template/Users/edit.ctp:30
+#: Template/Users/index.ctp:26
+#: Template/Users/view.ctp:30
+msgid "New Station Type"
+msgstr ""
+
+#: Template/Passengers/add.ctp:37
+#: Template/Passengers/edit.ctp:42
+#: Template/Passengers/index.ctp:37
+#: Template/Passengers/view.ctp:42
+#: Template/Roles/index.ctp:37
+#: Template/StationTypes/add.ctp:37
+#: Template/StationTypes/edit.ctp:41
+#: Template/StationTypes/index.ctp:37
+#: Template/StationTypes/view.ctp:43
+#: Template/Stations/add.ctp:37
+#: Template/Stations/edit.ctp:41
+#: Template/Stations/index.ctp:37
+#: Template/Stations/view.ctp:43
+#: Template/Trains/add.ctp:38
+#: Template/Trains/edit.ctp:41
+#: Template/Trains/index.ctp:38
+#: Template/Trains/view.ctp:43
+#: Template/Users/about.ctp:37
+#: Template/Users/add.ctp:37
+#: Template/Users/edit.ctp:41
+#: Template/Users/index.ctp:37
+#: Template/Users/view.ctp:41
+msgid "List Passenger"
+msgstr ""
+
+#: Template/Passengers/add.ctp:38
+#: Template/Passengers/edit.ctp:43
+#: Template/Passengers/index.ctp:38
+#: Template/Passengers/view.ctp:43
+#: Template/Roles/index.ctp:38
+#: Template/StationTypes/add.ctp:38
+#: Template/StationTypes/edit.ctp:42
+#: Template/StationTypes/index.ctp:38
+#: Template/StationTypes/view.ctp:44
+#: Template/Stations/add.ctp:38
+#: Template/Stations/edit.ctp:42
+#: Template/Stations/index.ctp:38
+#: Template/Stations/view.ctp:44
+#: Template/Trains/add.ctp:39
+#: Template/Trains/edit.ctp:42
+#: Template/Trains/index.ctp:39
+#: Template/Trains/view.ctp:44
+#: Template/Users/about.ctp:38
+#: Template/Users/add.ctp:38
+#: Template/Users/edit.ctp:42
+#: Template/Users/index.ctp:38
+#: Template/Users/view.ctp:42
+msgid "New Passenger"
+msgstr ""
+
+#: Template/Passengers/add.ctp:44
+#: Template/Passengers/edit.ctp:49
+#: Template/Passengers/index.ctp:44
+#: Template/Passengers/view.ctp:49
+#: Template/Roles/index.ctp:44
+#: Template/StationTypes/add.ctp:44
+#: Template/StationTypes/edit.ctp:48
+#: Template/StationTypes/index.ctp:44
+#: Template/StationTypes/view.ctp:50
+#: Template/Stations/add.ctp:44
+#: Template/Stations/edit.ctp:48
+#: Template/Stations/index.ctp:44
+#: Template/Stations/view.ctp:50
+#: Template/Trains/add.ctp:45
+#: Template/Trains/edit.ctp:48
+#: Template/Trains/index.ctp:45
+#: Template/Trains/view.ctp:50
+#: Template/Users/about.ctp:44
+#: Template/Users/add.ctp:44
+#: Template/Users/edit.ctp:48
+#: Template/Users/index.ctp:44
+#: Template/Users/view.ctp:48
+msgid "New User"
+msgstr ""
+
+#: Template/Passengers/add.ctp:45
+#: Template/Passengers/edit.ctp:50
+#: Template/Passengers/index.ctp:45
+#: Template/Passengers/view.ctp:50
+#: Template/Roles/index.ctp:45
+#: Template/StationTypes/add.ctp:45
+#: Template/StationTypes/edit.ctp:49
+#: Template/StationTypes/index.ctp:45
+#: Template/StationTypes/view.ctp:51
+#: Template/Stations/add.ctp:45
+#: Template/Stations/edit.ctp:49
+#: Template/Stations/index.ctp:45
+#: Template/Stations/view.ctp:51
+#: Template/Trains/add.ctp:46
+#: Template/Trains/edit.ctp:49
+#: Template/Trains/index.ctp:46
+#: Template/Trains/view.ctp:51
+#: Template/Users/about.ctp:45
+#: Template/Users/add.ctp:45
+#: Template/Users/edit.ctp:49
+#: Template/Users/index.ctp:45
+#: Template/Users/view.ctp:49
+msgid "List Trains"
+msgstr ""
+
+#: Template/Passengers/add.ctp:46
+#: Template/Passengers/edit.ctp:51
+#: Template/Passengers/index.ctp:46
+#: Template/Passengers/view.ctp:51
+#: Template/Roles/index.ctp:46
+#: Template/StationTypes/add.ctp:46
+#: Template/StationTypes/edit.ctp:50
+#: Template/StationTypes/index.ctp:46
+#: Template/StationTypes/view.ctp:52
+#: Template/Stations/add.ctp:46
+#: Template/Stations/edit.ctp:50
+#: Template/Stations/index.ctp:46
+#: Template/Stations/view.ctp:52
+#: Template/Trains/add.ctp:47
+#: Template/Trains/edit.ctp:50
+#: Template/Trains/index.ctp:47
+#: Template/Trains/view.ctp:52
+#: Template/Users/about.ctp:46
+#: Template/Users/add.ctp:46
+#: Template/Users/edit.ctp:50
+#: Template/Users/index.ctp:46
+#: Template/Users/view.ctp:50
+msgid "List Stations"
+msgstr ""
+
+#: Template/Passengers/add.ctp:47
+#: Template/Passengers/edit.ctp:52
+#: Template/Passengers/index.ctp:47
+#: Template/Passengers/view.ctp:52
+#: Template/Roles/index.ctp:47
+#: Template/StationTypes/add.ctp:47
+#: Template/StationTypes/edit.ctp:51
+#: Template/StationTypes/index.ctp:47
+#: Template/StationTypes/view.ctp:53
+#: Template/Stations/add.ctp:47
+#: Template/Stations/edit.ctp:51
+#: Template/Stations/index.ctp:47
+#: Template/Stations/view.ctp:53
+#: Template/Trains/add.ctp:48
+#: Template/Trains/edit.ctp:51
+#: Template/Trains/index.ctp:48
+#: Template/Trains/view.ctp:53
+#: Template/Users/about.ctp:47
+#: Template/Users/add.ctp:47
+#: Template/Users/edit.ctp:51
+#: Template/Users/index.ctp:47
+#: Template/Users/view.ctp:51
+msgid "List Station Types"
+msgstr ""
+
+#: Template/Passengers/add.ctp:56
+msgid "Add Passenger"
+msgstr ""
+
+#: Template/Passengers/add.ctp:76
+#: Template/Passengers/edit.ctp:71
+#: Template/Roles/Nouveau dossier/add.ctp:21
+#: Template/Roles/Nouveau dossier/edit.ctp:27
+#: Template/StationTypes/add.ctp:62
+#: Template/StationTypes/edit.ctp:66
+#: Template/Stations/add.ctp:64
+#: Template/Stations/edit.ctp:66
+#: Template/Trains/add.ctp:66
+#: Template/Trains/edit.ctp:68
+#: Template/Users/add.ctp:81
+#: Template/Users/edit.ctp:80
+#: View/Helper/FormHelper.php:1988
+msgid "Submit"
+msgstr ""
+
+#: Template/Passengers/edit.ctp:21
+#: Template/Passengers/view.ctp:21
+msgid "Delete Passenger"
+msgstr ""
+
+#: Template/Passengers/edit.ctp:21
+#: Template/Passengers/index.ctp:90;111
+#: Template/Passengers/view.ctp:21
+#: Template/Roles/index.ctp:71
+#: Template/Roles/Nouveau dossier/edit.ctp:13
+#: Template/Roles/Nouveau dossier/index.ctp:31
+#: Template/Roles/Nouveau dossier/view.ctp:11
+#: Template/Roles/Nouveau dossier/view_original.ctp:11
+#: Template/StationTypes/edit.ctp:20
+#: Template/StationTypes/index.ctp:77
+#: Template/StationTypes/view.ctp:22
+#: Template/Stations/edit.ctp:20
+#: Template/Stations/index.ctp:77
+#: Template/Stations/view.ctp:22
+#: Template/Trains/edit.ctp:20
+#: Template/Trains/index.ctp:82
+#: Template/Trains/view.ctp:22
+#: Template/Users/edit.ctp:20
+#: Template/Users/index.ctp:73
+#: Template/Users/view.ctp:20;108
+msgid "Are you sure you want to delete # {0}?"
+msgstr ""
+
+#: Template/Passengers/edit.ctp:61
+#: Template/Passengers/view.ctp:20
+msgid "Edit Passenger"
+msgstr ""
+
+#: Template/Passengers/index.ctp:54
+msgid "Passengers"
+msgstr ""
+
+#: Template/Passengers/index.ctp:88;109
+#: Template/Roles/index.ctp:69
+#: Template/Roles/Nouveau dossier/index.ctp:29
+#: Template/StationTypes/index.ctp:75
+#: Template/Stations/index.ctp:75
+#: Template/Trains/index.ctp:80
+#: Template/Users/index.ctp:71
+#: Template/Users/view.ctp:106
+#: View/Helper/PaginatorHelper.php:1212
+msgid "View"
+msgstr ""
+
+#: Template/Passengers/index.ctp:89;110
+#: Template/Roles/index.ctp:70
+#: Template/Roles/Nouveau dossier/index.ctp:30
+#: Template/StationTypes/index.ctp:76
+#: Template/Stations/index.ctp:76
+#: Template/Trains/index.ctp:81
+#: Template/Users/index.ctp:72
+#: Template/Users/view.ctp:107
+msgid "Edit"
+msgstr ""
+
+#: Template/Passengers/index.ctp:90;111
+#: Template/Roles/index.ctp:71
+#: Template/Roles/Nouveau dossier/edit.ctp:11
+#: Template/Roles/Nouveau dossier/index.ctp:31
+#: Template/StationTypes/index.ctp:77
+#: Template/Stations/index.ctp:77
+#: Template/Trains/index.ctp:82
+#: Template/Users/index.ctp:73
+#: Template/Users/view.ctp:108
+msgid "Delete"
+msgstr ""
+
+#: Template/Passengers/index.ctp:123
+#: Template/Roles/index.ctp:79
+#: Template/Roles/Nouveau dossier/index.ctp:39
+#: Template/StationTypes/index.ctp:85
+#: Template/Stations/index.ctp:85
+#: Template/Trains/index.ctp:90
+#: Template/Users/index.ctp:81
+msgid "first"
+msgstr ""
+
+#: Template/Passengers/index.ctp:124
+#: Template/Roles/index.ctp:80
+#: Template/Roles/Nouveau dossier/index.ctp:40
+#: Template/StationTypes/index.ctp:86
+#: Template/Stations/index.ctp:86
+#: Template/Trains/index.ctp:91
+#: Template/Users/index.ctp:82
+msgid "previous"
+msgstr ""
+
+#: Template/Passengers/index.ctp:126
+#: Template/Roles/index.ctp:82
+#: Template/Roles/Nouveau dossier/index.ctp:42
+#: Template/StationTypes/index.ctp:88
+#: Template/Stations/index.ctp:88
+#: Template/Trains/index.ctp:93
+#: Template/Users/index.ctp:84
+msgid "next"
+msgstr ""
+
+#: Template/Passengers/index.ctp:127
+#: Template/Roles/index.ctp:83
+#: Template/Roles/Nouveau dossier/index.ctp:43
+#: Template/StationTypes/index.ctp:89
+#: Template/Stations/index.ctp:89
+#: Template/Trains/index.ctp:94
+#: Template/Users/index.ctp:85
+msgid "last"
+msgstr ""
+
+#: Template/Passengers/index.ctp:129
+#: Template/Roles/index.ctp:85
+#: Template/Roles/Nouveau dossier/index.ctp:45
+#: Template/StationTypes/index.ctp:91
+#: Template/Stations/index.ctp:91
+#: Template/Trains/index.ctp:96
+#: Template/Users/index.ctp:87
+msgid "Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total"
+msgstr ""
+
+#: Template/Passengers/view.ctp:62
+msgid "User"
+msgstr ""
+
+#: Template/Passengers/view.ctp:66
+#: Template/Users/view.ctp:94
+msgid "Train"
+msgstr ""
+
+#: Template/Passengers/view.ctp:70
+#: Template/Stations/view.ctp:63
+#: Template/Trains/view.ctp:63
+#: Template/Users/view.ctp:95
+msgid "Name"
+msgstr ""
+
+#: Template/Passengers/view.ctp:74
+msgid "Address"
+msgstr ""
+
+#: Template/Passengers/view.ctp:78
+msgid "Phone"
+msgstr ""
+
+#: Template/Passengers/view.ctp:82
+msgid "Other"
+msgstr ""
+
+#: Template/Passengers/view.ctp:86
+#: Template/Roles/Nouveau dossier/view.ctp:24
+#: Template/Roles/Nouveau dossier/view_original.ctp:24
+#: Template/StationTypes/view.ctp:71
+#: Template/Stations/view.ctp:71
+#: Template/Trains/view.ctp:75
+#: Template/Users/view.ctp:75
+msgid "Id"
+msgstr ""
+
+#: Template/Passengers/view.ctp:90
+#: Template/StationTypes/view.ctp:75
+#: Template/Stations/view.ctp:75
+#: Template/Trains/view.ctp:79
+#: Template/Users/view.ctp:79
+msgid "Created"
+msgstr ""
+
+#: Template/Passengers/view.ctp:94
+#: Template/StationTypes/view.ctp:79
+#: Template/Stations/view.ctp:79
+#: Template/Trains/view.ctp:83
+#: Template/Users/view.ctp:83
+msgid "Modified"
+msgstr ""
+
+#: Template/Roles/index.ctp:54
+#: Template/Roles/Nouveau dossier/index.ctp:14
+msgid "Roles"
+msgstr ""
+
+#: Template/Roles/Nouveau dossier/add.ctp:16
+msgid "Add Role"
+msgstr ""
+
+#: Template/Roles/Nouveau dossier/edit.ctp:22
+#: Template/Roles/Nouveau dossier/view.ctp:10
+#: Template/Roles/Nouveau dossier/view_original.ctp:10
+msgid "Edit Role"
+msgstr ""
+
+#: Template/Roles/Nouveau dossier/index.ctp:10
+#: Template/Roles/Nouveau dossier/view.ctp:13
+#: Template/Roles/Nouveau dossier/view_original.ctp:13
+msgid "New Role"
+msgstr ""
+
+#: Template/Roles/Nouveau dossier/view.ctp:11
+#: Template/Roles/Nouveau dossier/view_original.ctp:11
+msgid "Delete Role"
+msgstr ""
+
+#: Template/Roles/Nouveau dossier/view.ctp:20
+#: Template/Roles/Nouveau dossier/view_original.ctp:20
+msgid "Role Name"
+msgstr ""
+
+#: Template/StationTypes/add.ctp:56
+msgid "Add Station Type"
+msgstr ""
+
+#: Template/StationTypes/edit.ctp:20
+#: Template/StationTypes/view.ctp:22
+msgid "Delete Station Type"
+msgstr ""
+
+#: Template/StationTypes/edit.ctp:60
+#: Template/StationTypes/view.ctp:21
+msgid "Edit Station Type"
+msgstr ""
+
+#: Template/StationTypes/index.ctp:54
+msgid "Station Types"
+msgstr ""
+
+#: Template/StationTypes/view.ctp:63
+#: Template/Stations/view.ctp:67
+msgid "Type"
+msgstr ""
+
+#: Template/StationTypes/view.ctp:67
+msgid "Description"
+msgstr ""
+
+#: Template/Stations/add.ctp:56
+msgid "Add Station"
+msgstr ""
+
+#: Template/Stations/edit.ctp:20
+#: Template/Stations/view.ctp:22
+msgid "Delete Station"
+msgstr ""
+
+#: Template/Stations/edit.ctp:60
+#: Template/Stations/view.ctp:21
+msgid "Edit Station"
+msgstr ""
+
+#: Template/Stations/index.ctp:54
+msgid "Stations"
+msgstr ""
+
+#: Template/Trains/add.ctp:57
+msgid "Add Train"
+msgstr ""
+
+#: Template/Trains/edit.ctp:20
+#: Template/Trains/view.ctp:22
+msgid "Delete Train"
+msgstr ""
+
+#: Template/Trains/edit.ctp:60
+#: Template/Trains/view.ctp:21
+msgid "Edit Train"
+msgstr ""
+
+#: Template/Trains/index.ctp:55
+msgid "Trains"
+msgstr ""
+
+#: Template/Trains/view.ctp:67
+msgid "Origin Station"
+msgstr ""
+
+#: Template/Trains/view.ctp:71
+msgid "Final Station"
+msgstr ""
+
+#: Template/Trains/view.ctp:87
+msgid "Private"
+msgstr ""
+
+#: Template/Trains/view.ctp:88
+msgid "Yes"
+msgstr ""
+
+#: Template/Trains/view.ctp:88
+msgid "No"
+msgstr ""
+
+#: Template/Users/add.ctp:56
+msgid "Add User"
+msgstr ""
+
+#: Template/Users/edit.ctp:20
+#: Template/Users/view.ctp:20
+msgid "Delete User"
+msgstr ""
+
+#: Template/Users/edit.ctp:60
+#: Template/Users/view.ctp:19
+msgid "Edit User"
+msgstr ""
+
+#: Template/Users/index.ctp:54
+msgid "Users"
+msgstr ""
+
+#: Template/Users/view.ctp:62
+msgid "Email"
+msgstr ""
+
+#: Template/Users/view.ctp:66
+msgid "Role"
+msgstr ""
+
+#: Template/Users/view.ctp:71
+msgid "Password"
+msgstr ""
+
+#: Template/Users/view.ctp:88
+msgid "Related Passengers"
+msgstr ""
+
+#: Template/Users/view.ctp:90
+msgid "*A user can be used by more than one person"
+msgstr ""
+
+#: Template/Error/error400.ctp:37
+msgid "The requested address {0} was not found on this server."
+msgstr ""
+
+#: Template/Error/error500.ctp:39
+msgid "An Internal Error Has Occurred"
+msgstr ""
+
+#: Controller/Component/AuthComponent.php:500
+msgid "You are not authorized to access that location."
+msgstr ""
+
+#: Controller/Component/CsrfComponent.php:162
+#: Http/Middleware/CsrfProtectionMiddleware.php:191
+msgid "Missing CSRF token cookie"
+msgstr ""
+
+#: Controller/Component/CsrfComponent.php:166
+#: Http/Middleware/CsrfProtectionMiddleware.php:195
+msgid "CSRF token mismatch."
+msgstr ""
+
+#: Error/ExceptionRenderer.php:262
+msgid "Not Found"
+msgstr ""
+
+#: Error/ExceptionRenderer.php:264
+msgid "An Internal Error Has Occurred."
+msgstr ""
+
+#: Http/Response.php:2603
+msgid "The requested file contains `..` and will not be read."
+msgstr ""
+
+#: Http/Response.php:2624
+msgid "The requested file was not found"
+msgstr ""
+
+#: I18n/Number.php:90
+msgid "{0,number,#,###.##} KB"
+msgstr ""
+
+#: I18n/Number.php:92
+msgid "{0,number,#,###.##} MB"
+msgstr ""
+
+#: I18n/Number.php:94
+msgid "{0,number,#,###.##} GB"
+msgstr ""
+
+#: I18n/Number.php:96
+msgid "{0,number,#,###.##} TB"
+msgstr ""
+
+#: I18n/Number.php:88
+msgid "{0,number,integer} Byte"
+msgid_plural "{0,number,integer} Bytes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:80
+msgid "{0} from now"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:80
+msgid "{0} ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:83
+msgid "{0} after"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:83
+msgid "{0} before"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:114
+msgid "just now"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:151
+msgid "about a second ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:152
+msgid "about a minute ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:153
+msgid "about an hour ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:154;332
+msgid "about a day ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:155;333
+msgid "about a week ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:156;334
+msgid "about a month ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:157;335
+msgid "about a year ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:168
+msgid "in about a second"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:169
+msgid "in about a minute"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:170
+msgid "in about an hour"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:171;346
+msgid "in about a day"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:172;347
+msgid "in about a week"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:173;348
+msgid "in about a month"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:174;349
+msgid "in about a year"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:304
+msgid "today"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:370
+msgid "%s ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:371
+msgid "on %s"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:47;126;316
+msgid "{0} year"
+msgid_plural "{0} years"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:51;129;319
+msgid "{0} month"
+msgid_plural "{0} months"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:57;132;322
+msgid "{0} week"
+msgid_plural "{0} weeks"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:59;135;325
+msgid "{0} day"
+msgid_plural "{0} days"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:64;138
+msgid "{0} hour"
+msgid_plural "{0} hours"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:68;141
+msgid "{0} minute"
+msgid_plural "{0} minutes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:72;144
+msgid "{0} second"
+msgid_plural "{0} seconds"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ORM/RulesChecker.php:57
+msgid "This value is already in use"
+msgstr ""
+
+#: ORM/RulesChecker.php:104
+msgid "This value does not exist"
+msgstr ""
+
+#: ORM/RulesChecker.php:128
+msgid "The count does not match {0}{1}"
+msgstr ""
+
+#: Utility/Text.php:917
+msgid "and"
+msgstr ""
+
+#: Validation/Validator.php:111
+msgid "This field is required"
+msgstr ""
+
+#: Validation/Validator.php:112
+msgid "This field cannot be left empty"
+msgstr ""
+
+#: Validation/Validator.php:2054
+msgid "The provided value is invalid"
+msgstr ""
+
+#: View/Helper/FormHelper.php:1099
+msgid "Edit {0}"
+msgstr ""
+
+#: View/Helper/FormHelper.php:1101
+msgid "New {0}"
+msgstr ""
+
+#: View/Helper/HtmlHelper.php:815
+msgid "Home"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:540
+msgid "January"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:541
+msgid "February"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:542
+msgid "March"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:543
+msgid "April"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:544
+msgid "May"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:545
+msgid "June"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:546
+msgid "July"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:547
+msgid "August"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:548
+msgid "September"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:549
+msgid "October"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:550
+msgid "November"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:551
+msgid "December"
+msgstr ""
+

@@ -85,7 +85,7 @@ try {
 
 
 
-
+Plugin::load('ADmad/JwtAuth');
 Plugin::load('Migrations');
 
 

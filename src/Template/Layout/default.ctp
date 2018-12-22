@@ -83,7 +83,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 <body>
 
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-		  <a class="navbar-brand" href="http://localhost/PHP/trains">Home</a>
+		  <a class="navbar-brand" href="/PHP/trains">Home</a><!-- maintenant c'est un lien relatif -->
 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		  </button>
@@ -92,24 +92,27 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 			<ul class="navbar-nav mr-auto">
 			  <li class="nav-item active">
 				<?php if($role === 'anonymous'){ ?>
-                <?= $this->Html->link(__('Login'), ['controller' => 'Users', 'action' => 'login'],['class' => 'nav-link']) ?>
-			<?php } else { ?>	
-				<?= $this->Html->link(__($role), ['controller' => 'Users', 'action' => 'view/'.$_SESSION['Auth']['User']['id']],['class' => 'nav-link']) ?>
+                	<?= $this->Html->link(__('Login'), ['controller' => 'Users', 'action' => 'login'],['class' => 'nav-link']) ?>
+						<?php } else { ?>	
+					<?= $this->Html->link(__($role), ['controller' => 'Users', 'action' => 'view/'.$_SESSION['Auth']['User']['id']],['class' => 'nav-link']) ?>
 				</li>
-			  <li class="nav-item active">
-				<?= $this->Html->link(__('Logout'), ['controller' => 'Users', 'action' => 'logout'],['class' => 'nav-link']) ?>
+			  	<li class="nav-item active">
+					<?= $this->Html->link(__('Logout'), ['controller' => 'Users', 'action' => 'logout'],['class' => 'nav-link']) ?>
 				
-			<?php } ?>
-				<!--<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>-->
+					<?php } ?>
+					<!--<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>-->
 			  
-			  </li>
-			  <li class="nav-item">
+			  	</li>
+				<li class="nav-item active">
+					<?= $this->Html->link(__('Image (dropBox)'), ['controller' => 'Images', 'action' => 'index'],['class' => 'nav-link']) ?>
+			  	</li>
+			  	<li class="nav-item active">
 				<?= $this->Html->link(__('About'), ['controller' => 'Users', 'action' => 'about'],['class' => 'nav-link']) ?>
-			  </li>
-			  <li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			  	</li>
+			  	<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 				  Language
-				</a>
+					</a>
 				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 				<?= $this->Html->link('Français', ['action' => 'changeLang', 'fr_CA'], ['class' => 'dropdown-item'], ['escape' => false]) ?>
 				<?= $this->Html->link('English', ['action' => 'changeLang', 'en_US'], ['class' => 'dropdown-item'], ['escape' => false]) ?>
